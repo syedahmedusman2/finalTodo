@@ -1,8 +1,8 @@
-const createRoute = require('./create')
-const deleteRoute = require('./delete')
-const readRoute = require('./read')
+const createRoute = require('./create/create')
+const deleteRoute = require('./delete/delete')
+const readRoute = require('./read/read')
 const readAllRoute = require('./read-all')
-const updateRoute = require('./update')
+const updateRoute = require('./update/update')
 
 const handler = async (event, context) => {
   const path = event.path.replace(/\.netlify\/functions\/[^/]+/, '')
